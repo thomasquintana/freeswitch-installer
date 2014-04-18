@@ -18,3 +18,4 @@ $] git clone https://github.com/thomasquintana/freeswitch-installer.git
 $] cd freeswitch-installer
 $] sudo python ./install-freeswitch.py --templates /home/ubuntu/freeswitch-installer/templates
 ```
+It's important to note that the path to templates is absolute and not relative!
