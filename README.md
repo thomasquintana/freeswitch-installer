@@ -20,6 +20,12 @@ $] sudo python ./install-freeswitch.py --templates /home/ubuntu/freeswitch-insta
 ```
 It's important to note that the path to templates is absolute and not relative!
 
+When the installer is done FreeSwitch should be running. Below are some useful details.
+* A user freeswitch is created and added to the daemon group.
+* FreeSWITCH source is located @ /usr/src/freeswitch
+* FreeSWITCH is installed @ /usr/share/freeswitch
+* The modules files in the templates folder can be modified to configure which modules are built and loaded by FreeSWITCH at runtime.
+
 Notes
 =====
 
