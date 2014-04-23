@@ -111,4 +111,5 @@ if __name__ == "__main__":
 	template = environment.get_template('modules.conf.xml.jinja2')
 	modules = template.render()
 	write(modules, '/usr/share/freeswitch/conf/autoload_configs/modules.conf.xml')
+	start('freeswitch')
 
