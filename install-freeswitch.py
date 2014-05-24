@@ -67,7 +67,8 @@ if __name__ == "__main__":
 					 'libgnutls-dev', 'libjpeg-dev', 'libncurses5', 'libncurses5-dev', 'libperl-dev',
 					 'libogg-dev', 'libsnmp-dev', 'libssl-dev', 'libtiff4-dev', 'libtool', 'libvorbis-dev',
 					 'libx11-dev', 'libzrtpcpp-dev', 'make', 'python-dev', 'snmp', 'snmp-mibs-downloader',
-					 'snmpd', 'subversion', 'unixodbc-dev', 'uuid-dev', 'zlib1g-dev'])
+					 'snmpd', 'subversion', 'unixodbc-dev', 'uuid-dev', 'zlib1g-dev', 'libsqlite3-dev',
+                                         'libpcre3-dev', 'libspeex-dev', 'libspeexdsp-dev', 'libldns-dev', 'libedit-dev'])
 	# Use gawk as the defalt awk interpreter.
 	update_alternatives('awk', '/usr/bin/gawk')
 	# Start the network management daemon.
@@ -75,7 +76,7 @@ if __name__ == "__main__":
 	# Fetch the FreeSWITCH source code from Git repository.
 	git_clone(repository = 'git://git.freeswitch.org/freeswitch.git', \
 			destination = '/usr/src/freeswitch', \
-			revision = 'v1.2.stable')
+			revision = 'v1.4.4')
 	chdir('/usr/src/freeswitch')
 	# Bootstrap the FreeSWITCH build process.
 	run('./bootstrap.sh')
