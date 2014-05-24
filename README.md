@@ -1,7 +1,7 @@
 freeswitch-installer
 ====================
 
-Installs FreeSWITCH 1.2.stable on Ubuntu.
+Installs FreeSWITCH 1.4.x on Ubuntu.
 
 Install Dependencies
 ====================
