@@ -76,7 +76,7 @@ if __name__ == "__main__":
 	# Fetch the FreeSWITCH source code from Git repository.
 	git_clone(repository = 'git://git.freeswitch.org/freeswitch.git', \
 			destination = '/usr/src/freeswitch', \
-			revision = 'v1.4.4')
+			revision = 'v1.4.5')
 	chdir('/usr/src/freeswitch')
 	# Bootstrap the FreeSWITCH build process.
 	run('./bootstrap.sh')
