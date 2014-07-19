@@ -74,7 +74,7 @@ if __name__ == "__main__":
 	# Start the network management daemon.
 	start('snmpd')
 	# Fetch the FreeSWITCH source code from Git repository.
-	git_clone(repository = 'git://git.freeswitch.org/freeswitch.git', \
+	git_clone(repository = 'https://stash.freeswitch.org/scm/fs/freeswitch.git', \
 			destination = '/usr/src/freeswitch', \
 			revision = 'v1.4.6')
 	chdir('/usr/src/freeswitch')
